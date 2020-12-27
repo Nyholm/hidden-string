@@ -1,6 +1,6 @@
 {
     "copy-from-package": {
-        ".symfony/config/": "%CONFIG_DIR%/"
+        ".symfony/config/": "%CONFIG_DIR%/packages/"
     },
     "env": {
         "APP_HIDDEN_STRING": "true"
