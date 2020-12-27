@@ -1,24 +1,11 @@
 {
-    "bundles": {
-        "Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle": ["all"]
-    },
-    "copy-from-recipe": {
-        "config/": "%CONFIG_DIR%/",
-        "public/": "%PUBLIC_DIR%/",
-        "src/": "%SRC_DIR%/"
-    },
-    "composer-scripts": {
-        "cache:clear": "symfony-cmd",
-        "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd"
+    "copy-from-package": {
+        "./symfony/config/": "%CONFIG_DIR%/"
     },
     "env": {
-        "APP_ENV": "dev",
-        "APP_SECRET": "%generate(secret)%"
+        "APP_HIDDEN_STRING": "true"
     },
     "gitignore": [
-        ".env",
-        "/public/bundles/",
-        "/var/",
-        "/vendor/"
+        "/foo/"
     ]
 }
